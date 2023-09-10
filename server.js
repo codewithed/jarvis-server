@@ -34,7 +34,7 @@ app.post('/api', async (req, res) => {
       model: 'gpt-3.5-turbo',
       max_tokens: 2000,
     });
-    const completion = await JSON.stringify(response.data.choices[0].message);
+    const completion = JSON.stringify(response.data.choices[0].message);
     console.log(completion);
     res.send(completion);
   } catch (error) {
