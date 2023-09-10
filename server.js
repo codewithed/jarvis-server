@@ -16,7 +16,7 @@ const openai = new OpenAIApi(configuration);
 // create express app
 const app = express();
 app.use(cors({
-  origin: ['https://chatgpt-clone-beige-beta.vercel.app'],
+  origin: ['https://jarvis-ai-chatbot.vercel.app'],
 }));
 app.use(express.json());
 
